@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>PlayZone</title>
 
 <link rel="stylesheet" href="style.css">
@@ -11,36 +13,48 @@
 
 <header>
   <h1>🎮 PlayZone</h1>
-  <p>Portal de mini juegos</p>
+  <p>Tu portal de mini juegos</p>
 </header>
 
 <nav>
   <a href="#">Inicio</a>
   <a href="#">Juegos</a>
   <a href="#">Ranking</a>
+  <a href="#">Sugerencias</a>
 </nav>
 
 <h2>🔥 Juegos disponibles</h2>
 
 <section class="juegos">
 
+  <!-- CLICKER -->
   <div class="card">
     <h3>🪙 Coin Clicker</h3>
-    <button onclick="location.href='juegos/clicker.html'">Jugar</button>
+    <p>Haz clic y gana monedas</p>
+    <button onclick="location.href='juegos/clicker.html'">
+      Jugar
+    </button>
   </div>
 
+  <!-- SHOOTER (preparado para después) -->
   <div class="card">
     <h3>👾 Neon Shooter</h3>
-    <button onclick="location.href='juegos/shooter.html'">Jugar</button>
+    <p>Elimina enemigos rápidos</p>
+    <button onclick="alert('Próximamente 👾')">
+      Jugar
+    </button>
   </div>
 
+  <!-- RUNNER (preparado para después) -->
   <div class="card">
     <h3>🏃 Space Runner</h3>
-    <button onclick="location.href='juegos/runner.html'">Jugar</button>
+    <p>Esquiva obstáculos</p>
+    <button onclick="alert('Próximamente 🚀')">
+      Jugar
+    </button>
   </div>
 
 </section>
 
-<script src="script.js"></script>
 </body>
 </html>
