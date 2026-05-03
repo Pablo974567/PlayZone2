@@ -4,62 +4,14 @@
 <meta charset="UTF-8">
 <title>PlayZone</title>
 
-<style>
-body{
-  font-family: Arial;
-  background:#0f172a;
-  color:white;
-  margin:0;
-  text-align:center;
-}
-
-header{
-  background:#2563eb;
-  padding:20px;
-}
-
-nav{
-  background:#111827;
-  padding:10px;
-}
-
-nav a{
-  color:white;
-  margin:10px;
-  text-decoration:none;
-}
-
-.juegos{
-  display:flex;
-  justify-content:center;
-  gap:15px;
-  flex-wrap:wrap;
-  padding:20px;
-}
-
-.card{
-  background:#1e293b;
-  padding:15px;
-  width:200px;
-  border-radius:10px;
-}
-
-button{
-  margin-top:10px;
-  padding:8px;
-  cursor:pointer;
-  border:none;
-  border-radius:5px;
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
   <h1>🎮 PlayZone</h1>
-  <p>Portal de juegos online</p>
+  <p>Portal de mini juegos</p>
 </header>
 
 <nav>
@@ -68,26 +20,27 @@ button{
   <a href="#">Ranking</a>
 </nav>
 
-<h2>🔥 Juegos</h2>
+<h2>🔥 Juegos disponibles</h2>
 
-<div class="juegos">
+<section class="juegos">
 
   <div class="card">
-    <h3>🚀 Space Runner</h3>
-    <button onclick="alert('Juego en desarrollo')">Jugar</button>
+    <h3>🪙 Coin Clicker</h3>
+    <button onclick="location.href='juegos/clicker.html'">Jugar</button>
   </div>
 
   <div class="card">
-    <h3>👾 Monster Arena</h3>
-    <button onclick="alert('Juego en desarrollo')">Jugar</button>
+    <h3>👾 Neon Shooter</h3>
+    <button onclick="location.href='juegos/shooter.html'">Jugar</button>
   </div>
 
   <div class="card">
-    <h3>🍕 Pizza Clicker</h3>
-    <button onclick="alert('Juego en desarrollo')">Jugar</button>
+    <h3>🏃 Space Runner</h3>
+    <button onclick="location.href='juegos/runner.html'">Jugar</button>
   </div>
 
-</div>
+</section>
 
+<script src="script.js"></script>
 </body>
 </html>
