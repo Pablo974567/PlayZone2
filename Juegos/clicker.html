@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Coin Clicker</title>
+
+<style>
+body{
+  text-align:center;
+  font-family:Arial;
+  background:#0f172a;
+  color:white;
+}
+
+button{
+  padding:25px;
+  font-size:22px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🪙 Coin Clicker</h1>
+
+<h2 id="coins">0</h2>
+
+<button onclick="clickCoin()">CLICK</button>
+
+<br><br>
+<button onclick="location.href='../index.html'">⬅ Volver</button>
+
+<script>
+let coins = 0;
+
+function clickCoin(){
+  coins++;
+  document.getElementById("coins").innerText = coins;
+}
+</script>
+
+</body>
+</html>
